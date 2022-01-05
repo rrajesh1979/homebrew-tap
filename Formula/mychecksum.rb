@@ -1,17 +1,17 @@
-# Generated with JReleaser 0.10.0 at 2022-01-05T00:04:38.740941654Z
+# Generated with JReleaser 0.10.0 at 2022-01-05T02:55:14.466161378Z
 class Mychecksum < Formula
   desc "ref-java-cli -- Reference Java CLI program - Jumpstart Repo Template"
   homepage "https://github.com/rrajesh1979/ref-java-cli"
-  version "0.0.9"
+  version "0.0.11"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rrajesh1979/ref-java-cli/releases/download/v0.0.9/mychecksum-0.0.9-linux-x86_64.zip"
-    sha256 "2a9eae69ff3a090ce82c74b79271f5c128e2001188c0956e2ef8deac91d42916"
+    url "https://github.com/rrajesh1979/ref-java-cli/releases/download/v0.0.11/mychecksum-0.0.11-linux-x86_64.zip"
+    sha256 "245de270c69a9646710c021a6a699f35bddd3bdc011d3c2326dd1df41ad9dd2f"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rrajesh1979/ref-java-cli/releases/download/v0.0.9/mychecksum-0.0.9-osx-x86_64.zip"
-    sha256 "642460fcc942c6047e30fecd8ec890b4722da9d0292222393588e0cd151de0c0"
+    url "https://github.com/rrajesh1979/ref-java-cli/releases/download/v0.0.11/mychecksum-0.0.11-osx-x86_64.zip"
+    sha256 "caf1921dacbbd64af112f8a96b6532668b26ad3ae1665f1c2a229c43d64108f8"
   end
 
 
@@ -22,6 +22,6 @@ class Mychecksum < Formula
 
   test do
     output = shell_output("#{bin}/mychecksum --version")
-    assert_match "0.0.9", output
+    assert_match "0.0.11", output
   end
 end
