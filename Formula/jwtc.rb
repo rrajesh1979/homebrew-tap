@@ -1,17 +1,17 @@
-# Generated with JReleaser 0.10.0 at 2022-01-10T03:23:03.106181582Z
+# Generated with JReleaser 0.10.0 at 2022-01-10T21:31:23.703635395Z
 class Jwtc < Formula
   desc "ref-java-jwt -- JWT CLI utility"
   homepage "https://github.com/rrajesh1979/ref-java-jwt"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rrajesh1979/ref-java-jwt/releases/download/v0.0.3/jwtc-0.0.3-linux-x86_64.zip"
-    sha256 "b3943fb6d147227b13575be720ad2aac2550c935129858b0c648cf8578c721f8"
+    url "https://github.com/rrajesh1979/ref-java-jwt/releases/download/v0.0.4/jwtc-0.0.4-linux-x86_64.zip"
+    sha256 "be24beb190d4d9b046f8461c80997296ef2f6ed6e43cc325279e069eb4b6dab6"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rrajesh1979/ref-java-jwt/releases/download/v0.0.3/jwtc-0.0.3-osx-x86_64.zip"
-    sha256 "4897a586f8741dad0a06fdb019a274ae5406c233ba11a8150274f3e062f5c743"
+    url "https://github.com/rrajesh1979/ref-java-jwt/releases/download/v0.0.4/jwtc-0.0.4-osx-x86_64.zip"
+    sha256 "b6ecee1dd90e1836d1a59baea2200c04b71ef0e04244204a0070c9d6aaa02c37"
   end
 
 
@@ -22,6 +22,6 @@ class Jwtc < Formula
 
   test do
     output = shell_output("#{bin}/jwtc --version")
-    assert_match "0.0.3", output
+    assert_match "0.0.4", output
   end
 end
