@@ -1,5 +1,5 @@
 # Generated manually as a test
-class Rmdbload < Formula
+class Rustmdbload < Formula
   desc "MongoDB Load gen"
   homepage "https://github.com/rrajesh1979/rust_mdb_load"
   version "0.0.13"
@@ -12,11 +12,11 @@ class Rmdbload < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink "#{libexec}/bin/rmdbload"
+    bin.install_symlink "#{libexec}/bin/rust_mdb_load"
   end
 
   test do
-    output = shell_output("#{bin}/rmdbload --version")
+    output = shell_output("#{bin}/rust_mdb_load --version")
     assert_match "0.0.13", output
   end
 end
