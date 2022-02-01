@@ -1,5 +1,5 @@
 # Generated manually as a test
-class Rustmdbload < Formula
+class RustMdbLoad < Formula
   desc "MongoDB Load gen"
   homepage "https://github.com/rrajesh1979/rust_mdb_load"
   version "0.0.13"
