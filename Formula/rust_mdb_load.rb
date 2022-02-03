@@ -2,12 +2,12 @@
 class RustMdbLoad < Formula
   desc "MongoDB Load gen 🦀"
   homepage "https://github.com/rrajesh1979/rust_mdb_load"
-  version "0.0.17"
+  version "0.0.18"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rrajesh1979/rust_mdb_load/releases/download/v0.0.17/rust_mdb_load-0.0.17-x86_64-apple-darwin.zip"
-    sha256 "82743283172e3d27fc070a986b5e612a1bc074986e710a60345ddce9f6a2bb05"
+    url "https://github.com/rrajesh1979/rust_mdb_load/releases/download/v0.0.18/rust_mdb_load-0.0.18-x86_64-apple-darwin.zip"
+    sha256 "a1e2697bdc5d779320612576f78696fff54883fa0f746583b64b189a3849d7bc"
   end
 
   def install
@@ -17,6 +17,6 @@ class RustMdbLoad < Formula
 
   test do
     output = shell_output("#{bin}/rust_mdb_load --version")
-    assert_match "0.0.17", output
+    assert_match "0.0.18", output
   end
 end
